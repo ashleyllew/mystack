@@ -125,6 +125,20 @@ public class MyStackTests {
 
 		assertEquals(stack.getRoot().getNextElement(), element2);
 	}
+	
+	@Test
+	public void top() {
+		MyStack stack = new MyStack();
+		Element root = new Element();
+		stack.setRoot(root);
+
+		Element element = new Element();
+		element.setData("peach");
+		stack.push(element);
+		String data = stack.top();
+		
+		assertEquals("peach", data);
+	}
 
 
 }

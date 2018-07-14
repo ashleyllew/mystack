@@ -50,7 +50,7 @@ public class MyStack {
 		}
 	}
 	
-	public Element top() {
+	public String top() {
 		Element top = getRoot();
 		if (size == 0 || top.getNextElement() == null) {
 			// throw an error here
@@ -58,7 +58,7 @@ public class MyStack {
 		}
 		else {
 			Element first = top.getNextElement();
-			return first;
+			return first.getData();
 		}
 	}
 	
